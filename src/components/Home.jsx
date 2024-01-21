@@ -1,20 +1,24 @@
 import MyPic from "../assets/MyPic.jpg";
+import MyResume from "../assets/MyResume.pdf";
 function HomePage() {
   return (
     <>
-      <h1>"Hello"</h1>
-      <h1>
-        <b>I'M SHAHZAIB</b>
-      </h1>
-      <h2>Software Engineer</h2>
+      <h1>Hey! It's so nice to see you here!</h1>
+      <h2>Welcome to Shahzaib Vohra's Portfolio </h2>
       <p>
-        I am a passionate Software Enginner with diverse knowledge and work
-        experience. I have Worked on more then 30 enterprise application across
-        different industries (Health, Transportaion, Telecom and Banking) My
-        mission is to be an enterpneur to make this world a better place to
-        live.
+        Hello and thank you for visiting my online portfolio! I'm Shahzaib
+        Vohra, a passionate Software Engineer based in Canada. Here, you'll find
+        a curated collection of my work and a glimpse into my creative journey.
       </p>
-      <img src={MyPic} height={100} width={100}></img>
+      <br />
+      <h2>What You'll Discover:</h2>
+      <p>
+        Browse through my portfolio to explore a diverse range of projects that
+        showcase my skills and expertise. Each piece reflects my commitment to
+        excellence and innovation in IT. Whether it's Website development or IT
+        services related Consultation , every endeavor is a story waiting to be
+        told.
+      </p>
     </>
   );
 }
