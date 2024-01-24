@@ -1,10 +1,21 @@
 import MyPic from "../assets/MyPic.jpg";
 import MyResume from "../assets/MyResume.pdf";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+
 function About() {
   return (
     <>
-      {" "}
-      <img src={MyPic} height={100} width={100}></img>
+      <Container>
+        <Row>
+          <Col xs={6} md={4}>
+            <Image src={MyPic} height={171} weight={180} roundedCircle />
+          </Col>
+        </Row>
+      </Container>
+
       <h1>"Hello"</h1>
       <h1>
         <b>I'M SHAHZAIB</b>

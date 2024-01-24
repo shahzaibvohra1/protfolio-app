@@ -4,7 +4,10 @@ import TaskMasterPro from "../assets/TaskMasterPro.jpg";
 import GreenEarthEcoFestival from "../assets/GreenEarthEcoFestival.jpg";
 import TalesofWanderlust from "../assets/TalesofWanderlust.jpg";
 import UrbanPerspectives from "../assets/UrbanPerspectives.jpg";
-import Logo from "../assets/Logo.jpg";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+
 function Projects() {
   const Projects = [
     {
@@ -52,19 +55,30 @@ function Projects() {
   ];
   return (
     <>
-      {Projects.map((project, index) => (
-        <div key={index}>
-          <div>
-            <img src={project.ProjectImage} height={200} width={200} />
+      <Container>
+        {Projects.map((project, index) => (
+          <div key={index}>
+            <Row>
+              <Col xs={8} md={12} align="center">
+                <div>
+                  <img src={project.ProjectImage} height={200} width={200} />
+                  <h1>{project.ProjectHeading}</h1>
+                  <h2>{project.ProjectTitle} </h2>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={12}>
+                <div>
+                  <p>{project.ProjectDescription}</p>
+                  <br />
+                </div>
+              </Col>
+            </Row>
           </div>
-          <div>
-            <h1>{project.ProjectHeading}</h1>
-            <h2>{project.ProjectTitle} </h2>
-            <p>{project.ProjectDescription}</p>
-            <br />
-          </div>
-        </div>
-      ))}
+        ))}
+        \
+      </Container>
     </>
   );
 }
