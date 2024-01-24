@@ -4,6 +4,7 @@ function About() {
   return (
     <>
       {" "}
+      <img src={MyPic} height={100} width={100}></img>
       <h1>"Hello"</h1>
       <h1>
         <b>I'M SHAHZAIB</b>
@@ -27,7 +28,6 @@ function About() {
         </a>
         &nbsp;to download my resume
       </p>
-      <img src={MyPic} height={100} width={100}></img>
     </>
   );
 }
